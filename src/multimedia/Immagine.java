@@ -27,4 +27,12 @@ public class Immagine extends Multimedia implements Brightness, Show {
         }
         System.out.println(this.title + asterisco);
     }
+
+    @Override
+    public String toString() {
+        return "Immagine{" +
+                "title='" + this.title + " " +
+                "luminosita=" + this.luminosita +
+                '}';
+    }
 }

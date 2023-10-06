@@ -36,6 +36,16 @@ public class Video extends Multimedia implements Volume, Brightness, Play {
     }
 
     @Override
+    public String toString() {
+        return "Video{" +
+                "title='" + this.title + " " +
+                "volume=" + this.volume + " " +
+                "luminosita=" + this.luminosita + " " +
+                "durata=" + this.durata +
+                '}';
+    }
+
+    @Override
     public void play() {
         String asterisco = "";
         String escalmativo = "";

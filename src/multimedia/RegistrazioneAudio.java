@@ -23,6 +23,15 @@ public class RegistrazioneAudio extends Multimedia implements Volume, Play {
     }
 
     @Override
+    public String toString() {
+        return "RegistrazioneAudio{" +
+                "title='" + this.title + " " +
+                "durata=" + this.durata + " " +
+                "volume=" + this.volume + " " +
+                '}';
+    }
+
+    @Override
     public void play() {
         String escalmativo = "";
         for (int i = 0; i < this.volume; i++) {
